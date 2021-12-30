@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1.0 , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="school-list.css">
+    <script src="https://kit.fontawesome.com/8145e8cf22.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>School List</h1>
+
+    <div class="main-card">
+        <h2>Set the name and the score of the student</h2>
+        <div class="wrapper-inputs">
+            <div class="div-name">
+                <input type="text" required id="name" class="name" placeholder="Name...">
+            </div>
+
+            <div class="div-scores">
+                <input type="number" id="score1" class="inputs" name="score1" placeholder="Score 1">
+                <input type="number" id="score2" class="inputs" name="score2" placeholder="Score 2">
+                <i class="fas fa-arrow-right"></i>
+                <input type="number" readonly id="final" class="inputs" name="final" placeholder="Final">
+            </div>
+            <input type="button" id="button" class="button" name="button" value="Calculate">
+
+            <div class="div-scores">
+                <input type="text" readonly id="result" class="result" name="result">
+            </div>
+        </div>
+        
+    </div>   
+    
+    <table>
+        <tr>
+            <th>Reproved</th>
+            <th>Retry</th>
+            <th>Approved</th>
+        </tr>
+        <tr>
+            <td>Score &lt; 5</td>
+            <td>5 &lt; Score &lt; 7</td>
+            <td>7 &lt; Score</td>
+        </tr>
+    </table>
+
+    <footer>
+        &copy; Ortiz
+    </footer>
+
+
+    <script src="school-list.js"></script>
+</body>
+</html>
+
+
+
